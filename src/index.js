@@ -1,10 +1,9 @@
-import value from "./js/a";
-import "./css/styles.scss";
-// import "./css/styles.css";
-// import "./css/base.css";
+import * as basicLightbox from 'basiclightbox';
+import 'basiclightbox/dist/basicLightbox.min.css';
+import './sass/styles.scss';
 
-const add = (a, b) => a + b;
+const modalTemplate = document.querySelector('#modal');
 
-add(2, 3);
+const instance = basicLightbox.create(modalTemplate);
 
-console.log(value);
+console.log(instance);
